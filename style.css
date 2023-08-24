@@ -65,6 +65,12 @@ button {
   grid-gap: 3.2rem;
 }
 
+button.running {
+background-color:var(--btn-hover) !important;
+color: var(--bg-color);
+}
+
+
 #card {
   width: 13.8rem;
   height: 15.2rem;
