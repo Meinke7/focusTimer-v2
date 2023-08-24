@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsla(0, 0%, 100%, 1);
+  --text-color:hsla(240, 6%, 21%, 1);
+  --bg-controls: hsla(240, 9%, 89%, 1);
+  --btn-hover: hsla(194, 97%, 31%, 1);
+
+font-family: sans-serif;
+ font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  
+  background: var(--bg-color);
+}
+
+#hero {
+  display: flex;
+  gap: 19.2rem;
+}
+
+#timer {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+
+#display {
+  display: flex;
+  font-size: 12.6rem;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+  
+}
+
+#buttons {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+
+}
+
+button {
+  font-size: 4.8rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+#controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3.2rem;
+}
+
+#card {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  background-color: var(--bg-controls);
+ 
+}
