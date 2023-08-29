@@ -9,6 +9,11 @@
   --text-color:hsla(240, 6%, 21%, 1);
   --bg-controls: hsla(240, 9%, 89%, 1);
   --btn-hover: hsla(194, 97%, 31%, 1);
+  --fire-color: linear-gradient(-45deg, #ee7752, #f43a3d, #efe14b, #d59123);
+  --rain-color: linear-gradient(-45deg, #0391c5, #02a2d3, #022def, #efedea);
+  --tree-color: linear-gradient(-45deg, #431300, #015101, #01912c, #02ac1e);
+  --coffee-color: linear-gradient(-45deg, #f6e4de, #f0eded, #efe14b, #dac29c);
+  --start-color: linear-gradient(-45deg, #fbd0c1, #cdc0c0, #ceccbb, #cfc9be);
 
 font-family: sans-serif;
  font-size: clamp(40%, 1% + 2vw, 62.5%);
@@ -19,7 +24,7 @@ body {
   height: 100vh;
   place-content: center;
   
-  background: var(--bg-color);
+  background: var(--start-color);
 }
 
 #hero {
@@ -28,7 +33,7 @@ body {
 }
 
 #timer {
-  color: var(--text-color);
+  color: var(--bg-color);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -66,16 +71,118 @@ button {
   grid-gap: 3.2rem;
 }
 
-button.running {
-background-color:var(--btn-hover) !important;
-color: var(--bg-color);
-}
+
 
 
 #card {
   width: 13.8rem;
   height: 15.2rem;
   border-radius: 2.4rem;
-  background-color: var(--bg-controls);
+  
  
+}
+
+.ph-fire-simple:hover{
+ 
+  background: var(--fire-color);
+  color: var(--text-color);
+}
+
+.ph-tree-evergreen:hover{
+ 
+  background: var(--tree-color);
+  color: var(--bg-color);
+}
+
+.ph-cloud-rain:hover{
+ 
+  background: var(--rain-color);
+  color: var(--bg-color);
+}
+
+.ph-storefront:hover{
+ 
+  background: var(--coffee-color);
+  color: var(--text-color);
+}
+
+
+
+
+
+.firebg {
+  background: var(--fire-color);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.rainbg {
+  background: var(--rain-color);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.treebg {
+  background: var(--tree-color);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.coffeebg {
+  background: var(--coffee-color);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
